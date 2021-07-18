@@ -1,7 +1,7 @@
 import './css/styles.css';
 import API from './fetchCountries';
 import countryCard from './countryCard.hbs';
-import renderCountryList from './renderCountryList.hbs';
+import renderCountryList from './renderCountryList.hbs'
 import getRefs from './getRefs';
 import Notiflix from "notiflix";
 
@@ -10,6 +10,7 @@ const DEBOUNCE_DELAY = 300;
 const refs = getRefs();
 
 refs.searchCountry.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
+
 
 function onSearch (e) {
     refs.countryInfo.innerHTML = '';
